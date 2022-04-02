@@ -1,0 +1,81 @@
+button,
+a {
+  --button-font-size-small: 12px;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  outline: 0;
+  display: inline-flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.primary,
+.secondary,
+.transparent,
+.ghost {
+  font-weight: 700;
+  background-image: none;
+  border-radius: 8px;
+  outline: none;
+  user-select: none;
+  text-align: center;
+  align-items: center;
+  font-family: inherit;
+  height: auto;
+  color: var(--color-blue-dark);
+  background-color: var(--color-white);
+  border: 3px solid var(--color-blue-dark);
+}
+
+.primary {
+  background-color: var(--color-blue-dark);
+  color: var(--color-white);
+}
+
+.ghost {
+  border-color: var(--color-white);
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.xl,
+.lg,
+.md,
+.sm {
+  padding: 0 23px;
+}
+
+.xl {
+  font-size: 23pt;
+  height: 89px;
+  min-width: 310px;
+}
+
+.lg {
+  font-size: 19pt;
+  height: 71px;
+}
+
+.md {
+  font-size: 15pt;
+  height: 56px;
+  min-width: 261px;
+}
+
+.sm {
+  font-size: 14pt;
+  height: 42px;
+  border: 1px solid;
+}

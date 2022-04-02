@@ -1,0 +1,22 @@
+.bulletin {
+  padding: 83px 70px 138px 70px;
+}
+
+.bulletinTitle {
+  text-align: center;
+}
+
+.bulletinTitle span {
+  font-size: 23pt;
+  font-weight: 700;
+}
+
+.bulletinTitle p {
+  margin: 12px 0 36px 0;
+  font-size: 15pt;
+}
+
+.bulletinItems {
+  display: flex;
+  justify-content: space-between;
+}

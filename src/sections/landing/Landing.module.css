@@ -1,0 +1,57 @@
+.container {
+  width: 100%;
+  height: 693px;
+  position: relative;
+  color: white;
+}
+
+.landingPhoto {
+  width: 100%;
+  height: 693px;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 169px;
+  width: 100%;
+  height: 524px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftContent {
+  margin-left: 70px;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.leftContent span {
+  font-size: 38pt;
+  font-weight: 700;
+}
+
+.leftContent p {
+  margin: 0;
+  font-size: 23pt;
+}
+
+.leftContent button {
+  width: fit-content;
+  padding: 25px;
+}
+
+.rightContent {
+  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 51.5px;
+}
+
+.rightContent span {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 14pt;
+}

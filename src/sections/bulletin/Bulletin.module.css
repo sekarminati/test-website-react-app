@@ -1,5 +1,7 @@
 .bulletin {
+  width: inherit;
   padding: 83px 70px 138px 70px;
+  margin: 0 auto;
 }
 
 .bulletinTitle {
@@ -19,4 +21,7 @@
 .bulletinItems {
   display: flex;
   justify-content: space-between;
+  overflow-x: scroll;
+  gap: 30px;
+  padding: 20px 5px;
 }

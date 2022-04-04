@@ -6,7 +6,7 @@ import SocialMedia from "../../components/social-media";
 
 const Landing = () => {
   return (
-    <div id="home" className={styles.container}>
+    <div className={styles.container}>
       <img className={styles.landingPhoto} src={landingPhoto} alt="Landing" />
       <div className={styles.content}>
         <div className={styles.leftContent}>

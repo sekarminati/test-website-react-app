@@ -1,0 +1,28 @@
+.info {
+  margin-top: 201px;
+  margin-bottom: 191px;
+  display: flex;
+  justify-content: center;
+  gap: 41px;
+}
+
+.leftInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.leftInfo span:first-of-type {
+  font-weight: 700;
+  font-size: 23pt;
+}
+
+.leftInfo span:last-of-type {
+  font-size: 15pt;
+}
+
+.infoButton {
+  display: flex;
+  gap: 20px;
+}

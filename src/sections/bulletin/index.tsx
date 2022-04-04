@@ -34,7 +34,6 @@ const Bulletin = () => {
       </div>
       <div className={styles.bulletinItems}>
         {bulletinItems.map((d) => {
-          console.log(d.title.split(" ").length);
           return <NewsCard type={d.type} image={d.image} title={d.title} />;
         })}
       </div>

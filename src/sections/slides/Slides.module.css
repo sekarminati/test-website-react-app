@@ -1,0 +1,5 @@
+.slides {
+  margin: 0 70px;
+  border-radius: 8px;
+  background-color: var(--color-grey-dark);
+}

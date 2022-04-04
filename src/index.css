@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Quicksand:wght@400;700&family=Roboto:wght@500;900&display=swap");
 :root {
   --font-family: "Quicksand", sans-serif;
-  --font-family-secondary: "Lato", sans-serif;
+  --font-family-navbar: "Lato", sans-serif;
+  --font-family-footer: "Roboto", sans-serif;
 
   /* onedna color pallete */
   --color-blue: #2093be;
@@ -9,7 +10,7 @@
   --color-blue-light: #2eb3e5;
   --color-grey: #efefef;
   --color-grey-dark: #eaeaea;
-  --color-grey-light: #e5e5e5;
+  --color-grey-light: #f3f3f3;
   --color-white: #ffffff;
   --color-black: #3f3f3f;
   --color-red: #da2525;
@@ -26,7 +27,7 @@ body,
   font-weight: 400;
   line-height: 1.25;
   color: var(--color-black);
-  font-family: var(--font-family), var(--font-family-secondary);
+  font-family: var(--font-family), var(--font-family-navbar);
   background-color: var(--color-grey-light);
   margin: 0;
 }

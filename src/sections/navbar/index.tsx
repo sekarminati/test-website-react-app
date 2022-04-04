@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ReactComponent as IcSearch } from "../../assets/icons/search.svg";
 import logoWhite from "../../assets/logo/logo-white.png";
 import Button from "../../components/button";
@@ -14,9 +14,20 @@ const menus = [
   { key: "blog", title: "Blog" },
 ];
 
-const Navbar = () => {
-  const [active, setActive] = useState("home");
+export interface IMenu {
+  menu?: string;
+  onChangeMenu?: (menu: string) => void;
+}
+
+const Navbar = ({ menu = "home", onChangeMenu = () => {} }: IMenu) => {
+  const [active, setActive] = useState(menu);
   const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    if (menu !== active) {
+      setActive(menu);
+    }
+  }, [active, menu]);
 
   const changeBackground = () => {
     if (window.scrollY >= 80) {
@@ -36,15 +47,18 @@ const Navbar = () => {
       <div className={styles.menuSection}>
         {menus.map((d) => {
           return (
-            <div
+            <button
               className={classNames({
                 menu: true,
                 active: d.key === active,
               })}
-              onClick={() => setActive(d.key)}
+              onClick={() => {
+                setActive(d.key);
+                onChangeMenu(d.key);
+              }}
             >
               {d.title}
-            </div>
+            </button>
           );
         })}
       </div>

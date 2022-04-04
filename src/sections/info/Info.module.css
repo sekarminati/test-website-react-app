@@ -1,6 +1,8 @@
 .info {
-  margin-top: 201px;
-  margin-bottom: 191px;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 201px;
+  padding-bottom: 191px;
   display: flex;
   justify-content: center;
   gap: 41px;
